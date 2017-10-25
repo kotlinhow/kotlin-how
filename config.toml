@@ -1,4 +1,4 @@
-baseURL = "http://kotlin.how"
+baseURL = "https://kotlin-how.netlify.com"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -7,10 +7,6 @@ theme = "hugo-theme-learn"
 themesdir = "themes/"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
-
-contentDir = "content"
-publishDir = "public"
-layoutDir = "layouts"
 
 [params]
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
