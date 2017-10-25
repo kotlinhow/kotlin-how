@@ -8,6 +8,10 @@ themesdir = "themes/"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
+contentDir = "content"
+publishDir = "public"
+layoutDir = "layouts"
+
 [params]
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
   description = "Documentation for Hugo Learn Theme"
