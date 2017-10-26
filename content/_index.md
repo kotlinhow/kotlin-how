@@ -4,9 +4,9 @@
 
 ## Welcome to [**Kotlin.how**](https://kotlin.how).
 
-Kotlin.how is a container of articles that aim to show how to approach a certain problem or algorithm with [JetBrain](https://www.jetbrains.com/)'s [Kotlin](https://kotlinlang.org/) language.
+Kotlin.how is a curated list of articles that offer approaches to different computational problems with [JetBrain](https://www.jetbrains.com/)'s [Kotlin](https://kotlinlang.org/) language.
 
-Most of the articles will also offer a comparison with a traditional [Java](https://java.com/en/download/) approach to the same problem.
+Most of the articles offer a comparison with a traditional [Java](https://java.com/en/download/) approach to the same problem.
 
 
 ----------
