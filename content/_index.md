@@ -8,5 +8,6 @@ Kotlin.how is a curated list of articles that offer approaches to different comp
 
 Most of the articles offer a comparison with a traditional [Java](https://java.com/en/download/) approach to the same problem.
 
+The first series of introductory articles will focus on solutions to problems proposed on [LeetCode](https://leetcode.com/).
 
 ----------
