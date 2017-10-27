@@ -3,12 +3,23 @@ title = "Two Sum"
 weight = 15
 +++
 
-### Description: 
+### Description 
 
 Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
 You may assume that each input would have **_exactly_** one solution, and you may not use the same element twice.
 
+#### Example
+
+```
+Given nums = [1, 3, 7, 12], target = 8,
+
+Because nums[0] + nums[2] = 1 + 7 = 8,
+return [0, 2].
+```
+
 ### Solution
+
+#### Brute Force
 
 This is an example of a Brute Force solution in Java. It loops through each element `x` and find if there is another value that equals `target - x`
 
@@ -25,7 +36,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-Here's the same brute force solution in Kotlin, using lamdas with a more functional flow:
+Here's the same brute force solution in Kotlin, using lamdas for a more functional style:
 
 ```java
 fun twoSum(nums: IntArray, target: Int): IntArray {
