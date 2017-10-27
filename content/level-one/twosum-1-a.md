@@ -120,17 +120,17 @@ public int[] twoSum(int[] nums, int target) {
 And here's the Kotlin version. The code presents less indexes and somehow feels more natural to write, other than being more compact. 
 
 ```java
-        fun twoSum(nums: IntArray, target: Int): IntArray {
-            val map = HashMap<Int, Int>()
-            for (i in nums.indices) {
-                val complement = target - nums[i]
-                if (map.containsKey(complement)) {
-                    return intArrayOf(map[complement]!!, i)
-                }
-                map.put(nums[i], i)
-            }
-            throw IllegalArgumentException("No two sum solution")
+fun twoSum(nums: IntArray, target: Int): IntArray {
+    val map = HashMap<Int, Int>()
+    for (i in nums.indices) {
+        val complement = target - nums[i]
+        if (map.containsKey(complement)) {
+            return intArrayOf(map[complement]!!, i)
         }
+        map.put(nums[i], i)
+    }
+    throw IllegalArgumentException("No two sum solution")
+}
 ```
 
 
