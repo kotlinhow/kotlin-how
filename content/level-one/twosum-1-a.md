@@ -25,16 +25,16 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-Here's the same brute force solution in Kotlin
+Here's the same brute force solution in Kotlin, using lamdas with a more functional flow:
 
-```kotlin
+```java
 fun twoSum(nums: IntArray, target: Int): IntArray {
-    for (i in nums.indices) {
-        (i + 1 until nums.size)
+     nums.indices.forEach { i ->
+         (i + 1 until nums.size)
             .asSequence()
             .filter { nums[it] == target - nums[i] }
             .forEach { return intArrayOf(i, it) }
-        }
+    }
     throw IllegalArgumentException("No two sum solution")
 }
 ```
