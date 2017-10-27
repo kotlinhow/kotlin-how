@@ -32,7 +32,7 @@ public int[] twoSum(int[] nums, int target) {
             }
         }
     }
-    throw new IllegalArgumentException("No two sum solution");
+    throw new IllegalArgumentException("No couple of numbers satisfies target");
 }
 ```
 
@@ -47,7 +47,7 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
             .filter { nums[it] == target - nums[i] }
             .forEach { return intArrayOf(i, it) }
     }
-    throw IllegalArgumentException("No two sum solution")
+    throw IllegalArgumentException("No couple of numbers satisfies target")
 }
 ```
 
@@ -72,7 +72,7 @@ public int[] twoSum(int[] nums, int target) {
             return new int[] { i, map.get(complement) };
         }
     }
-    throw new IllegalArgumentException("No two sum solution");
+    throw new IllegalArgumentException("No couple of numbers satisfies target");
 }
 ```
 
@@ -92,7 +92,7 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
             return intArrayOf(i, map[complement]!!)
           }
     }
-    throw IllegalArgumentException("No two sum solution")
+    throw IllegalArgumentException("No couple of numbers satisfies target")
 }
 ```
 
@@ -111,7 +111,7 @@ public int[] twoSum(int[] nums, int target) {
         }
         map.put(nums[i], i);
     }
-    throw new IllegalArgumentException("No two sum solution");
+    throw new IllegalArgumentException("No couple of numbers satisfies target");
 }
 ```
 
