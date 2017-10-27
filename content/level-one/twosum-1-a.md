@@ -35,7 +35,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-##### Kotlin: Brute Force
+#### Kotlin: Brute Force
 Here's the same brute force solution in Kotlin, using lamdas for a more functional style:
 
 ```java
