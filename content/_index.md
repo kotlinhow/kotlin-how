@@ -8,6 +8,6 @@
 
 Most of the articles offer a comparison with a traditional [Java](https://java.com/en/download/) approach to the same problem.
 
-The first series of introductory articles will focus on solutions to problems proposed on [LeetCode](https://leetcode.com/).
+The first series of introductory articles will focus on algorithms to solve common computational problems in Kotlin.
 
 ----------
