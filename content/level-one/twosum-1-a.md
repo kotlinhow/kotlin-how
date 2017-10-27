@@ -19,9 +19,8 @@ return [0, 2].
 
 ### Solution
 
-#### Brute Force
-
-This is an example of a Brute Force solution in Java. It loops through each element `x` and find if there is another value that equals `target - x`
+#### Java: Brute Force 
+This is an example of a brute force solution in Java. It loops through each element `x` and find if there is another value that equals `target - x`
 
 ```java
 public int[] twoSum(int[] nums, int target) {
@@ -36,6 +35,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
+##### Kotlin: Brute Force
 Here's the same brute force solution in Kotlin, using lamdas for a more functional style:
 
 ```java
