@@ -21,7 +21,7 @@ return [0, 2].
 
 #### Java: Brute Force 
 This is an example of a brute force solution in Java. It takes _O(n^2)_ in terms of time complexity and _O(1)_ for space. 
-It loops through each element `x` and find if there is another value that equals `target - x`
+This implementation loops through each element `x` and find if there is another value that equals `target - x`
 
 ```java
 public int[] twoSum(int[] nums, int target) {
@@ -78,20 +78,56 @@ public int[] twoSum(int[] nums, int target) {
 
 #### Kotlin (Two-pass Hash Table)
 
+In Kotlin, this turns into the following code. Notice how for the absence of primitive types, `int[]` turns into `IntArray`
 
 ```java
-In Kotlin, this turns into the following code.
+fun twoSum(nums: IntArray, target: Int): IntArray {
+    val map = HashMap<Int, Int>()
+    for (i in nums.indices) {
+         map.put(nums[i], i)
+    }
+    for (i in nums.indices) {
+        val complement = target - nums[i]
+         if (map.containsKey(complement) && map.get(complement) != i) {
+            return intArrayOf(i, map[complement]!!)
+          }
+    }
+    throw IllegalArgumentException("No two sum solution")
+}
+```
 
+#### Java (One-pass Hash Table)
+
+It is also possible to reduce the number of code lines. We can do this by check if current element's complement already exists
+while we iterate and insert elements into the table. Using this implementation, we traverse the array of _n_ elements only once.
+
+```java
+public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+        int complement = target - nums[i];
+        if (map.containsKey(complement)) {
+            return new int[] { map.get(complement), i };
+        }
+        map.put(nums[i], i);
+    }
+    throw new IllegalArgumentException("No two sum solution");
+}
+```
+
+#### Kotlin (One-pass Hash Table)
+
+And here's the Kotlin version. The code presents less indexes and somehow feels more natural to write, other than being more compact. 
+
+```java
         fun twoSum(nums: IntArray, target: Int): IntArray {
             val map = HashMap<Int, Int>()
             for (i in nums.indices) {
-                map.put(nums[i], i)
-            }
-            for (i in nums.indices) {
                 val complement = target - nums[i]
-                if (map.containsKey(complement) && map.get(complement) != i) {
-                    return intArrayOf(i, map[complement]!!)
+                if (map.containsKey(complement)) {
+                    return intArrayOf(map[complement]!!, i)
                 }
+                map.put(nums[i], i)
             }
             throw IllegalArgumentException("No two sum solution")
         }
