@@ -1,38 +1,35 @@
-baseURL = "https://kotlin-how.netlify.com"
+baseurl = "https://kotlin.how"
+theme = "cocoa-eh"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
 languageCode = "en-US"
-defaultContentLanguage = "en"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Enrico Casini"
+title = "Cocoa Enhanced"
+disqusshortname = ""
+pluralizelisttitles = false
 
-title = "Kotlin.How"
-theme = "hugo-theme-learn"
-themesdir = "themes/"
-metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
-disqusShortname = "icochico"
+[permalinks]
+blog = "blog/:slug/"
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
-  author = "Mathieu Cornic"
-  showVisitedLinks = true
-  themeVariant = "blue"
-
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
-
-[Languages]
-[Languages.en]
-title = "Extras"
-weight = 1
-languageName = "English"
-
-[[Languages.en.menu.shortcuts]] 
-name = "<i class='fa fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/kotlinhow"
-weight = 10
-
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> Credits"
-url = "https://www.ihmc.us/groups/ecasini"
-weight = 30
+dateform = "Nov 9, 2017"
+dateformfull = "Thu Nov 9 2017 17:41:05 CST"
+description = "Example blg"
+copyright = "Copyright © 2017 Enrico Casini"
+logofile = "img/logo.png"
+faviconfile = "img/logo.png"
+highlightjs = true
+progressively = true
+align_left = false
+lang = "en"
+github = "example"
+email = "kotlin.how@gmail.com"
+linkedin = "john-example-aa80ue8è"
+twitter = "example"
+social_banner = "img/banner.png"
+posts_navigation = true
+small_banner_logo = false
 
