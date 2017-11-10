@@ -1,2 +1,2 @@
 ﻿
-**Kotlin.how** is a curated list of articles that offer solution to common challenges with [JetBrain](https://www.jetbrains.com/)'s [Kotlin](https://kotlinlang.org/) language.
+[Kotlin.how](http://kotlin.how) is a curated list of articles and HOWTOs that present best practices and effective ways of using [JetBrain](https://www.jetbrains.com/)'s new [Kotlin](https://kotlinlang.org/) language.
