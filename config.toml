@@ -31,5 +31,5 @@ linkedin = "enricocasini"
 twitter = "ico_chico"
 social_banner = "images/logo.png"
 posts_navigation = true
-small_banner_logo = true
+small_banner_logo = false
 latestpostcount = 5
