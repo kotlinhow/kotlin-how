@@ -1,7 +1,10 @@
 +++
-title = "Two Sum"
+title = "LeetCode part 1: Two Sum in Java vs Kotlin"
 weight = 15
 +++
+
+In Part 1 of this article we are going to explore the differences between Java and Kotlin for one of the simplest algoritms available on [LeetCode](https://leetcode.com/)
+
 
 ### Description 
 
